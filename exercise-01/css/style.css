@@ -1,0 +1,33 @@
+/*element selectors*/
+/*
+Reset
+*/
+
+            a {
+                color: black;
+                text-decoration: none
+}
+            main {
+                background-color: green;
+                color: white
+            }
+        
+            main p {background-color: green
+            }
+                     
+            /*class selectors*/
+            .first-paragraph{
+                background-color: blue
+            }
+            
+/*
+Layout
+*/
+
+/*
+Navigation
+*/
+
+/*
+Typography
+*/
