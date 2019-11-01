@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkslategrey;
+    color: antiquewhite;
+}
+
+h1{
+    color: antiquewhite
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    margin-right: 500px;
+    margin-bottom: 0.5em;
+    width: 75%;
+}
+img{
+    margin-right: 60px;
+}
+
+.main-nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.main-nav ul li{
+    margin-right: 30px
+}
+
+.main-nav ul li a{
+    display: inline-block;
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    background-color: darkorange;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
