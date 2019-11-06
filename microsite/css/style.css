@@ -37,7 +37,7 @@ main a{
 .foot-nav ul li a {
     text-decoration: none;
     display: inline-block;
-    color: white;
+    color: 	#D96C00;
     padding: 3px 6px;
 }
 
@@ -46,14 +46,15 @@ main a{
 
 
 footer{
-        background-color: darkslategrey;
-        color: white
+        background-color: #282828;
+        color: #D96C00;
 }
 
 main {
     background-image: url(../img/courtney-hedger-t48eHCSCnds-unsplash.jpg);
     background-size: cover;
     background-position: top;
+    color: #5b285c;
 }
 
 /*Typography*/
@@ -85,8 +86,8 @@ main{
 
 article {
     border-style: double;
-    border-width: medium;
-    border-color: black;
+    border-width: thick;
+    border-color: #5b285c;
     border-radius: 7px;
     margin-left: auto;
     margin-right: auto;
@@ -106,6 +107,7 @@ main p{
 
 .my-pic{
     border-radius: 7px;
+    box-shadow: 5px 5px #C0C0C0;
     position: fixed;
     top: 0;
     margin-top: 25vh;
@@ -116,6 +118,7 @@ main p{
 .other-pic
 {
     border-radius: 7px;
+    box-shadow: 5px 5px #C0C0C0;
     position: fixed;
     top: 0;
     margin-top: 25vh;
