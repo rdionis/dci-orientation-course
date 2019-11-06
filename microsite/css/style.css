@@ -76,7 +76,6 @@ main{
 h1{
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 20px;
 }
 
 main{
@@ -96,6 +95,20 @@ article {
     padding: 5px 8px;
 }
 
+article:hover{
+    font-size: 130%;
+    width: 50%;
+    padding: 0 8px;
+}
+
+.article:hover ~ .my-pic{
+    margin-left: 5vw;
+}
+
+.article:hover ~ .other-pic{
+    margin-left: 83vw;
+}
+
 main p{
     padding: 5px 8px;
     padding-right: 0;
@@ -103,6 +116,7 @@ main p{
 
 .signature{
     text-align: right;
+    padding-top: 20px;
 }
 
 .my-pic{
@@ -115,6 +129,12 @@ main p{
     transform: rotate(340deg);
   }
 
+.my-pic:hover{
+    transform: rotate(20deg);
+
+}
+
+
 .other-pic
 {
     border-radius: 7px;
@@ -123,8 +143,14 @@ main p{
     top: 0;
     margin-top: 25vh;
     margin-left: 73vw;
+    margin-right: 0;
     transform: rotate(20deg);
   }
+
+.other-pic:hover{
+    transform: rotate(340deg);
+
+}
 
 .foot-nav{
     width: 60vw
