@@ -22,7 +22,16 @@ h1, h2{
 }
 
 .writer h2{
-    color: #610043ff;
+    color: #8a4f82ff;
+    font-size: 2em;
+    padding-top: 6vh;
+    position: fixed;
+    padding-left: 1vw;
+
+}
+
+.dancer h2{
+    color: #8a4f82ff;
     font-size: 2em;
     padding-top: 6vh;
     position: fixed;
@@ -31,10 +40,12 @@ h1, h2{
 }
 
 
+
 /*Navigation*/
 nav {
     position: fixed;
     z-index: 100;
+    padding-top: 1vh;
 }
 
 nav ul {
@@ -51,7 +62,8 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     font-family: 'ZCOOL KuaiLe', cursive;
-    color: #DCF8FB;
+    /*color: #DCF8FB;*/
+    color: #ffebb1;
     padding: 3px 6px;
     text-decoration: none;
 }
@@ -73,7 +85,7 @@ h1{
 
 .home main h2{
     font-family: 'ZCOOL KuaiLe', cursive;
-    font-size: 10vw;
+    font-size: 11vw;
     color: #ffbf00ff;
 }
 
@@ -83,16 +95,22 @@ h1{
     background-position: top;
 }
 
-.writer {
+.writer{
     background-image: url(../img/aaron-burden-y02jEX_B0O0-unsplash.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: right;
+
+}
+.dancer{
+    background-image: url(../img/ahmad-odeh-JhqhGfX_Wd8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
 
 footer{
     background-color: #1B0809;
-    color: #DCF8FB;
+    color: #ffebb1;
 }
 
 /*Typography*/
@@ -108,7 +126,15 @@ footer p{
     height: 10vw;
 }
 
+.dancer header{
+    height: 10vw;
+}
+
 body.writer{
+    overflow-y: hidden;
+}
+
+body.dancer{
     overflow-y: hidden;
 }
 
@@ -127,13 +153,17 @@ main{
 .home main h2{
     padding-bottom: 0;
     position: absolute;
-    background-color: rgba(255,255,255,0.5)
+    top: 12vw;
+    left: 6vw;
+    text-align: center;
+    text-shadow: 1.5px 1.5px #ffebb1;
+    transform: rotate(350deg);
 }
 
 .home main h2:hover{
-    font-size: 11vw;
+    transform: rotate(10deg);
 }
-
+/*
 .deconstructing{
     top: 15vw;
     left: 6vw;
@@ -143,9 +173,9 @@ main{
 .raquel{
     left: 50vw;
     top: 25vw;
-    transform: rotate(10deg);
+    transform: rotate(350deg);
 }
-
+*/
 footer{
     height: 5vh;
     display: flex;
@@ -169,6 +199,22 @@ footer p{
 }
     
 .writer article p{
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    line-height: 1.3em;
+}
+
+.dancer article{
+    width: 50%;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-left: 1vw;
+    padding: 3px 6px 3px 15px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.5);
+}
+    
+.dancer article p{
     padding-bottom: 1em;
     padding-top: 0.5em;
     line-height: 1.3em;
