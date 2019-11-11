@@ -1,0 +1,131 @@
+/*
+Stylesheet for the final project - MAT22b class @DCI Oct/Nov 2019
+Author: Raquel Dionísio
+*/
+
+
+
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navigation*/
+.main-nav {
+    position: fixed;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.main-nav ul li {
+   margin-right: 10px; 
+}
+
+
+.main-nav ul li a {
+    display: inline-block;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #DCF8FB;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover{
+    font-weight: bold;
+    color: #ffbf00ff;
+}
+
+/*Color&Style*/
+
+header{
+    font-size: 1.5em;
+}
+
+h1{
+    display: none;
+}
+
+.home main h2{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 10vw;
+    color: #ffbf00ff;
+}
+
+.home{
+    background-image: url(../img/orlova-maria-bU8TeXhsPcY-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.writer{
+    background-image: url(../img/aaron-burden-y02jEX_B0O0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+footer{
+    background-color: #1B0809;
+    color: #DCF8FB;
+}
+
+/*Typography*/
+
+footer p{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 1vw;
+}
+
+/*Layout*/
+
+.home main{
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+}
+
+main {
+    min-height: 95vh;
+}
+
+.home main h2{
+    padding-bottom: 0;
+    position: absolute;
+    background-color: rgba(255,255,255,0.5)
+}
+
+.home main h2:hover{
+    font-size: 11vw;
+}
+
+.deconstructing{
+    top: 15vw;
+    left: 6vw;
+    transform: rotate(350deg);
+}
+
+.raquel{
+    left: 50vw;
+    top: 25vw;
+    transform: rotate(10deg);
+}
+
+footer{
+    height: 5vh;
+    display: flex;
+}
+
+footer p{
+    width: 100vw;
+    text-align: right;
+    padding-right: 10px;
+}
