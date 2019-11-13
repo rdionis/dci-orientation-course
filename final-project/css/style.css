@@ -86,6 +86,7 @@ nav {
     position: fixed;
     z-index: 100;
     padding-top: 1vh;
+    width: 100%;
 }
 
 nav ul {
@@ -112,13 +113,19 @@ nav ul li a:hover{
     color: #ffbf00ff;
 }
 
+.main-nav{
+    background-color: rgba (40,50,60,0.7);
+}
+
 .writer article p a{
     text-decoration: none;
-    font-weight: bold;
+    color: #1B0809;
 }
 
 .writer article p a:hover{
     color: #1B0809;
+    font-weight: bold;
+
 ;
 }
 .dancer article p a{
@@ -141,7 +148,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.home{
+.home, .impressum, .contact{
     background-image: url(../img/orlova-maria-bU8TeXhsPcY-unsplash.jpg);
     background-size: cover;
     background-position: top;
@@ -176,29 +183,33 @@ footer{
 
 footer p{
     font-family: 'ZCOOL KuaiLe', cursive;
-    font-size: 1vw;
+    font-size: 1em;
+}
+
+.contact main{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 2em;
+    color: #ffbf00ff;
+    line-height: 1.3em;
+    padding-left: 2vw;
+
 }
 
 /*Layout*/
 
-.writer header{
-    height: 10vw;
+header{
+    height: 25vh;
 }
 
-.dancer header{
-    height: 10vw;
+.home header{
+    height: 0;
 }
-/*
+
 body.writer{
-    overflow-y: hidden;
+ 
 }
-
-body.dancer{
-    overflow-y: hidden;
-}
-*/
 main{
-    height: 73vh;
+    height: 70vh;
 }
 
 .home main{
@@ -208,13 +219,10 @@ main{
 }
 
 
-
-
-
 footer{
     height: 5vh;
     display: flex;
-    position: fixed;
+
 }
 
 footer p{
@@ -231,7 +239,7 @@ body{
 
 
     
-.writer article, .dancer article{
+article{
     font-size: 1.3em;
     line-height: 1.3em;
     margin-left: 1vw;
@@ -243,11 +251,11 @@ body{
 .writer article{
     background-color: rgba(255,255,255,0.8);
 }
-.dancer article{
+.dancer article, .impressum article{
     background-color: rgba(255,255,255,0.7);
 }
 
-.writer article p, .dancer article p{
+article p{
     padding-bottom: 1em;
     padding-top: 0.5em;
     line-height: 1.3em;
@@ -261,7 +269,7 @@ body{
         
     }
     
-    .writer article, .dancer article{
+    article{
     width: 50%;
     margin-top: 0vw;
     }
