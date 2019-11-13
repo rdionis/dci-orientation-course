@@ -205,9 +205,6 @@ header{
     height: 0;
 }
 
-body.writer{
- 
-}
 main{
     height: 70vh;
 }
@@ -222,11 +219,6 @@ main{
 footer{
     height: 5vh;
     display: flex;
-<<<<<<< HEAD
-    margin-top:auto; 
-=======
-
->>>>>>> e9f8e0f09589a8a9ed2a8bfe51bc9e04049b975d
 }
 
 footer p{
