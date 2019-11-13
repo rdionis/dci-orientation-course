@@ -11,12 +11,16 @@ Author: Raquel Dionísio
 @import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
 
 /*Reset*/
-@media only screen and (min-width: 992px){
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+    body{
+        font-size: 0.5em;
+        
+    }
 /*Headings*/
 
 h1, h2{
@@ -24,8 +28,18 @@ h1, h2{
 
 }
 
+h1{
+    display: none;
+}
+
+.home main h2{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 11vw;
+    color: #ffbf00ff;
+}
+
 .writer h2{
-    color: #8a4f82ff;
+    color: #1B0809;
     font-size: 2em;
     padding-top: 6vh;
     position: fixed;
@@ -42,7 +56,30 @@ h1, h2{
 
 }
 
+.home main h2{
+    padding-bottom: 0;
+    position: absolute;
+    top: 50vw;
+    left: 6vw;
+    text-align: center;
+    text-shadow: 1.5px 1.5px #ffebb1;
+    transform: rotate(350deg);
+}
 
+.web-developer h2{
+    top: 25vw;
+    position: absolute;
+    font-size: 6vw;
+    text-align: center;
+    width: 50%;
+    color: #ffbf00ff;
+    text-shadow: 1.5px 1.5px #ffebb1;
+}
+
+
+.home main h2:hover{
+    transform: rotate(10deg);
+}
 
 /*Navigation*/
 nav {
@@ -65,7 +102,6 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     font-family: 'ZCOOL KuaiLe', cursive;
-    /*color: #DCF8FB;*/
     color: #ffebb1;
     padding: 3px 6px;
     text-decoration: none;
@@ -76,20 +112,33 @@ nav ul li a:hover{
     color: #ffbf00ff;
 }
 
+.writer article p a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.writer article p a:hover{
+    color: #1B0809;
+;
+}
+.dancer article p a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dancer article p a:hover{
+    color: #1B0809;
+}
+
+
 /*Color&Style*/
 
 header{
     font-size: 1.5em;
 }
 
-h1{
-    display: none;
-}
-
-.home main h2{
-    font-family: 'ZCOOL KuaiLe', cursive;
-    font-size: 11vw;
-    color: #ffbf00ff;
+body {
+  background-repeat: no-repeat;
 }
 
 .home{
@@ -106,6 +155,13 @@ h1{
 }
 .dancer{
     background-image: url(../img/ahmad-odeh-JhqhGfX_Wd8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.web-developer{
+    background-image: url(../img/emile-perron-xrVDYZRGdw4-unsplash.jpg);
     background-size: cover;
     background-position: center;
 
@@ -132,7 +188,7 @@ footer p{
 .dancer header{
     height: 10vw;
 }
-
+/*
 body.writer{
     overflow-y: hidden;
 }
@@ -140,7 +196,7 @@ body.writer{
 body.dancer{
     overflow-y: hidden;
 }
-
+*/
 main{
     height: 73vh;
 }
@@ -153,35 +209,12 @@ main{
 
 
 
-.home main h2{
-    padding-bottom: 0;
-    position: absolute;
-    top: 12vw;
-    left: 6vw;
-    text-align: center;
-    text-shadow: 1.5px 1.5px #ffebb1;
-    transform: rotate(350deg);
-}
 
-.home main h2:hover{
-    transform: rotate(10deg);
-}
-/*
-.deconstructing{
-    top: 15vw;
-    left: 6vw;
-    transform: rotate(350deg);
-}
 
-.raquel{
-    left: 50vw;
-    top: 25vw;
-    transform: rotate(350deg);
-}
-*/
 footer{
     height: 5vh;
     display: flex;
+    position: fixed;
 }
 
 footer p{
@@ -196,35 +229,52 @@ body{
     color:#1B0809;
 }
 
-.writer article{
-    width: 50%;
+
+    
+.writer article, .dancer article{
     font-size: 1.3em;
     line-height: 1.3em;
     margin-left: 1vw;
+    margin-top: 10vw;
     padding: 3px 6px 3px 15px;
     border-radius: 8px;
-    background-color: rgba(255,255,255,0.8);
 }
     
-.writer article p{
+.writer article{
+    background-color: rgba(255,255,255,0.8);
+}
+.dancer article{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.writer article p, .dancer article p{
     padding-bottom: 1em;
     padding-top: 0.5em;
     line-height: 1.3em;
 }
 
-.dancer article{
+
+@media only screen and (min-width: 768px) {  
+
+    body{
+        font-size: 1em;
+        
+    }
+    
+    .writer article, .dancer article{
     width: 50%;
-    font-size: 1.3em;
-    line-height: 1.3em;
-    margin-left: 1vw;
-    padding: 3px 6px 3px 15px;
-    border-radius: 8px;
-    background-color: rgba(255,255,255,0.7);
-}
+    margin-top: 0vw;
+    }
+
+    .home main h2{
+    top: 12vw;
+    }
     
-.dancer article p{
-    padding-bottom: 1em;
-    padding-top: 0.5em;
-    line-height: 1.3em;
-}
+    .web-developer h2{
+    top: 12vw;
+    }
     
+    
+    
+    
+}
