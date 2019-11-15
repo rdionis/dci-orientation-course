@@ -39,7 +39,7 @@ h1{
 }
 
 .writer h2{
-    color: #1B0809;
+    color: #000000;
     font-size: 2em;
     padding-top: 6vh;
     position: fixed;
@@ -215,9 +215,6 @@ header{
     height: 0;
 }
 
-body.writer{
- 
-}
 main{
     height: 70vh;
 }
@@ -232,7 +229,7 @@ main{
 footer{
     height: 5vh;
     display: flex;
-
+    margin-top: auto;
 }
 
 footer p{
