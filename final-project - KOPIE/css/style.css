@@ -1,0 +1,298 @@
+/*
+Stylesheet for the final project - MAT22b class @DCI Oct/Nov 2019
+Author: Raquel Dionísio
+*/
+
+
+
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body{
+        font-size: 0.5em;
+        
+    }
+/*Headings*/
+
+h1, h2{
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+}
+
+h1{
+    display: none;
+}
+
+.home main h2{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 11vw;
+    color: #ffbf00ff;
+}
+
+.writer h2{
+    color: #1B0809;
+    font-size: 2em;
+    padding-top: 6vh;
+    position: fixed;
+    padding-left: 1vw;
+
+}
+
+.dancer h2{
+    color: #8a4f82ff;
+    font-size: 2em;
+    padding-top: 6vh;
+    position: fixed;
+    padding-left: 1vw;
+
+}
+
+.home main h2{
+    padding-bottom: 0;
+    position: absolute;
+    top: 50vw;
+    left: 6vw;
+    text-align: center;
+    text-shadow: 1.5px 1.5px #ffebb1;
+    transform: rotate(350deg);
+}
+
+.web-developer h2{
+    top: 25vw;
+    position: absolute;
+    font-size: 6vw;
+    text-align: center;
+    width: 50%;
+    color: #ffbf00ff;
+    text-shadow: 1.5px 1.5px #ffebb1;
+}
+
+
+.home main h2:hover{
+    transform: rotate(10deg);
+}
+
+/*Navigation*/
+nav {
+    position: fixed;
+    z-index: 100;
+    padding-top: 1vh;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+   margin-right: 10px; 
+}
+
+
+nav ul li a {
+    display: inline-block;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #ffebb1;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+    color: #ffbf00ff;
+}
+
+.main-nav{
+    background-color: rgba (40,50,60,0.7);
+}
+
+.writer article p a{
+    text-decoration: none;
+    color: #1B0809;
+}
+
+.writer article p a:hover{
+    color: #1B0809;
+    font-weight: bold;
+
+;
+}
+.dancer article p a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dancer article p a:hover{
+    color: #1B0809;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #ffbf00ff;
+
+}
+.contact a:hover{
+    color: #ffebb1;
+
+}
+
+
+/*Color&Style*/
+
+header{
+    font-size: 1.5em;
+}
+
+body {
+  background-repeat: no-repeat;
+}
+
+.home, .impressum, .contact{
+    background-image: url(../img/orlova-maria-bU8TeXhsPcY-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.writer{
+    background-image: url(../img/aaron-burden-y02jEX_B0O0-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+
+}
+.dancer{
+    background-image: url(../img/ahmad-odeh-JhqhGfX_Wd8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.web-developer{
+    background-image: url(../img/emile-perron-xrVDYZRGdw4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+footer{
+    background-color: #1B0809;
+    color: #ffebb1;
+}
+
+/*Typography*/
+
+footer p{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 1em;
+}
+
+.contact main{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 2em;
+    color: #ffbf00ff;
+    line-height: 1.3em;
+    padding-left: 2vw;
+
+}
+
+/*Layout*/
+
+header{
+    height: 25vh;
+}
+
+.home header{
+    height: 0;
+}
+
+body.writer{
+ 
+}
+main{
+    height: 70vh;
+}
+
+.home main{
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+footer{
+    height: 5vh;
+    display: flex;
+
+}
+
+footer p{
+    width: 100vw;
+    text-align: right;
+    padding-right: 10px;
+}
+/*Text*/
+
+body{
+    font-family: 'Heebo', sans-serif;
+    color:#1B0809;
+}
+
+
+    
+article{
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-left: 1vw;
+    margin-top: 10vw;
+    padding: 3px 6px 3px 15px;
+    border-radius: 8px;
+}
+    
+.writer article{
+    background-color: rgba(255,255,255,0.8);
+}
+.dancer article, .impressum article{
+    background-color: rgba(255,255,255,0.7);
+}
+
+article p{
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    line-height: 1.3em;
+}
+
+
+@media only screen and (min-width: 768px) {  
+
+    body{
+        font-size: 1em;
+        
+    }
+    
+    article{
+    width: 50%;
+    margin-top: 0vw;
+    }
+
+    .home main h2{
+    top: 12vw;
+    }
+    
+    .web-developer h2{
+    top: 12vw;
+    }
+    
+    
+    
+    
+}

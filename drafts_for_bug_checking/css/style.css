@@ -1,0 +1,189 @@
+/*
+Stylesheet for the final project - MAT22b class @DCI Oct/Nov 2019
+Author: Raquel Dionísio
+*/
+
+
+
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+    body {
+        font-size: 0.5em;
+        
+    }
+/*Headings*/
+
+h2{
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+}
+
+.writer h2{
+    color: #1B0809;
+    font-size: 3em;
+    padding-bottom: 6vh;
+
+}
+
+/*Navigation*/
+
+
+
+.main-nav, .foot-nav {
+    position: fixed;
+    z-index: 100;
+    padding-top: 1vh;
+    width: 100%;
+}
+
+.main-nav nav ul,{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.main-nav ul li {
+   margin-right: 10px;
+display: inline-block;
+        background-color: blue;
+
+}
+
+.main-nav ul li a, .foot-nav ul li a{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-decoration: none;    
+    color: black;
+    padding: 3px 6px;
+    }
+
+.main-nav ul li a:hover, .foot-nav ul li a:hover{
+    font-weight: bold;
+    color: #ffbf00ff;
+}
+
+.writer article p a{
+    text-decoration: none;
+    color: #1B0809;
+}
+
+.writer article p a:hover{
+    color: #1B0809;
+    font-weight: bold;
+}
+
+
+/*Color&Style*/
+
+header{
+    font-size: 1.5em;
+}
+
+body {
+  background-repeat: no-repeat;
+}
+
+.writer{
+    background-image: url(../img/aaron-burden-y02jEX_B0O0-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+
+}
+
+/*Typography*/
+
+
+
+
+
+/*Layout*/
+
+header{
+    height: 15vh;
+}
+
+main{
+    height: 81vh;
+    text-overflow: clip;
+
+}
+/*
+.home main{
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+}
+*/
+
+
+
+/*Text*/
+
+body{
+    font-family: 'Heebo', sans-serif;
+    color:#1B0809;
+}
+
+
+    
+article{
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-left: 1vw;
+    margin-top: 10vw;
+    padding: 6px 6px 25px 15px;
+    border-radius: 8px;
+}
+
+
+article p{
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    line-height: 1.3em;
+}
+
+/*Footer*/
+
+.foot-nav{
+    height: 4hv;
+    background-color: #1B0809;
+    font-size: 1em;
+
+}
+
+.foot-nav ul li a{
+    color: #ffebb1;
+}
+
+@media only screen and (min-width: 768px) {  
+
+    body{
+        font-size: 1em;
+        
+    }
+    
+    article{
+    width: 50%;
+    margin-top: 0vw;
+    }
+
+    
+    .web-developer h2{
+    top: 12vw;
+    }
+    
+    
+    
+    
+}
