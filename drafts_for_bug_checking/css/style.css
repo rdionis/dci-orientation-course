@@ -61,7 +61,12 @@ display: inline-block;
 
 }
 
-.main-nav ul li a, .foot-nav ul li a{
+.foot-nav ul li{
+    margin-right: 10px;
+display: inline-block;
+}
+
+.main-nav ul li a{
     font-family: 'ZCOOL KuaiLe', cursive;
     text-decoration: none;    
     color: black;
@@ -99,6 +104,12 @@ body {
     background-size: cover;
     background-position: right;
 
+}
+
+footer p{
+    text-align: right;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    position: absolute;
 }
 
 /*Typography*/
@@ -159,11 +170,18 @@ article p{
     height: 4hv;
     background-color: #1B0809;
     font-size: 1em;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #ffebb1;
+
 
 }
 
 .foot-nav ul li a{
     color: #ffebb1;
+}
+
+.copyright{
+    padding-left: 65vw;
 }
 
 @media only screen and (min-width: 768px) {  
